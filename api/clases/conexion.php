@@ -3,7 +3,7 @@ class conexionBD{
 private $servidor = "localhost";
 private $BD = "ecofuel";
 private $tipo = "root";
-private $pass = "cajanario";
+private $pass = "";
 private $conect;
 
 
