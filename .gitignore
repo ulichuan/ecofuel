@@ -2,8 +2,9 @@
 #
 
 # For Local files
-api/includes/conf.php
-api/clases/conexion.php
+/api/includes/conf.php
+/api/clases/conexion.php
+/api/clases/PHPMailer/*
 .htaccess
 upload/*
 
