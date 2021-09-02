@@ -2,7 +2,7 @@
 #
 
 # For Local files
-api/includes/conf.php
+api/includes/*
 api/clases/conexion.php
 .htaccess
 upload/*
