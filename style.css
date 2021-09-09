@@ -1,4 +1,4 @@
-* {
+/* * {
     font-family: monospace;
     font-size: 14px;
 }
@@ -45,4 +45,194 @@ header {
 .main p {
     text-align: center;
     color: #ededed;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+    --color-primary: #5AA849;
+}
+
+html {
+    /* 62.5% of 16px = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto 7rem;
+}
+
+.main-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    font-size: 2.4rem;
+}
+
+.main-mune {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.8rem;
+}
+
+.main-mune--item:first-child {
+    margin-right: 15px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    height: 75vh;
+}
+
+footer {
+    width: 100%;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.byline {
+    font-size: 1.2rem;
+}
+
+.websparadise {
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+/* Lists */
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Links */
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+}
+
+.form-container {
+    margin: auto;
+}
+
+.form--title {
+    margin-top: 5rem;
+    text-align: center;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.login-form {
+    width: 75%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem 3rem;
+    background-color: #464646;
+    text-align: right;
+    box-shadow: 
+        5px 5px rgba(90, 168, 73, 0.8) ;
+    transition: box-shadow 0.5s;
+}
+
+.login-form:hover {
+    box-shadow: 
+        5px 5px rgba(90, 168, 73, 0.8),
+        10px 10px rgba(90, 168, 73, 0.6),
+        15px 15px rgba(90, 168, 73, 0.4) ;
+}
+
+input {
+    font-size: 1.8rem;
+    padding: 1rem 0.8rem;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: 2px solid #5AA849;
+}
+
+.input-group {
+    display: flex;
+    align-items: baseline;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+input[type=submit] {
+    width: 40%;
+    cursor: pointer;
+    margin-top: 5rem;
+    padding: 0.8rem 1rem;
+    align-self: flex-end;
+    background-color: var(--color-primary);
+    color: #fff;
+    border: 1px solid var(--color-primary);
+    transition: background-color 0.5s;
+}
+
+input[type=submit]:hover {
+    background-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+    header {
+        width: 70%;
+        margin-bottom: 0.8rem;
+    }
+
+    main {
+        width: 70%;
+    }
+
+    .form-container {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .form-container {
+        width: 60%;
+    }
+}
+
+
+@media only screen and (max-width: 918px) {
+    .form-container {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 748px) {
+    .form-container {
+        width: 90%;
+    }
+
+    form {
+        padding: 4rem 3rem;
+    }
 }
